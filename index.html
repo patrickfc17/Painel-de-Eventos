@@ -16,6 +16,34 @@
             crossorigin="anonymous"
         ></script>
         <title>Boas Vindas!</title>
+        <style>
+            .card {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+            .card-img-top {
+                height: 200px;
+                object-fit: cover;
+            }
+            .card-body {
+                flex: 1;
+            }
+            .card-text {
+                min-height: 150px;
+                text-align: justify;
+            }
+            @media (max-width: 992px) {
+                .card-item {
+                    width: 45% !important;
+                }
+            }
+            @media (max-width: 768px) {
+                .card-item {
+                    width: 100% !important;
+                }
+            }
+        </style>
     </head>
     <body>
         <header style="height: 5rem">
@@ -31,191 +59,277 @@
                 </ul>
             </nav>
         </header>
-        <main class="px-5 my-5">
-            <ul
-                class="list-group d-flex flex-row gap-4 flex-wrap justify-content-center"
-            >
-                <li class="list-group-item border-0 p-0" style="width: 30%">
-                    <div class="card">
-                        <img
-                            src="./assets/festa-da-mandioca.jpeg"
-                            class="img card-img-top"
-                            alt="Festa da Mandioca - Almenara MG"
-                            title="Festa da Mandioca - Almenara MG"
-                        />
-                        <div
-                            class="card-body d-flex align-items-center flex-column gap-3"
-                        >
-                            <h5 class="card-title fw-bolder">
-                                Festa da Mandioca 2025
-                            </h5>
-                            <p
-                                class="card-text"
-                                style="text-align: justify"
-                                style="min-height: 264px"
-                            >
-                                Venha saborear os deliciosos pratos e curtir a
-                                cultura regional na Festa da Mandioca de
-                                Almenara! Com música ao vivo, barracas típicas,
-                                artesanato e muita diversão, o evento promete
-                                celebrar a tradição e o sabor da nossa terra.<br />
-                                <b>Data: 17/06 | Local: Aeroporto.</b>
-                                <br />
-                                Não perca! 🎉🍴 <br />
-                                <i>#FestaDaMandioca</i> <i>#AlmenaraMG</i>
-                            </p>
-                            <a href="#" class="btn btn-success w-50"
-                                >Ver Mais</a
-                            >
+        <main class="px-3 px-md-5 my-5">
+            <div class="container-fluid">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 card-item">
+                        <div class="card h-100">
+                            <img
+                                src="./assets/festa-da-mandioca.jpeg"
+                                class="card-img-top"
+                                alt="Festa da Mandioca - Almenara MG"
+                                title="Festa da Mandioca - Almenara MG"
+                            />
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bolder">
+                                    Festa da Mandioca 2025
+                                </h5>
+                                <p class="card-text">
+                                    Venha saborear os deliciosos pratos e curtir
+                                    a cultura regional na Festa da Mandioca de
+                                    Almenara! Com música ao vivo, barracas
+                                    típicas, artesanato e muita diversão, o
+                                    evento promete celebrar a tradição e o sabor
+                                    da nossa terra.<br />
+                                </p>
+                                <div class="mt-auto">
+                                    <span class="d-block mb-2"
+                                        ><b>Data: </b>17/06 |
+                                        <b>Local:</b> Aeroporto de Almenara<br
+                                    /></span>
+                                    <a
+                                        href="./pages/DetalhesFestaDaMandioca.html"
+                                        class="btn btn-success w-100"
+                                    >
+                                        Detalhes</a
+                                    >
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </li>
-                <li class="list-group-item border-0 p-0" style="width: 30%">
-                    <div class="card">
-                        <img
-                            src="./assets/show-sertanejo.jpg"
-                            class="img card-img-top"
-                            alt="Festa da Mandioca - Almenara MG"
-                            title="Festa da Mandioca - Almenara MG"
-                        />
-                        <div
-                            class="card-body d-flex align-items-center flex-column gap-3"
-                        >
-                            <h5 class="card-title fw-bolder">
-                                Zezé di Camargo e Luciano - Turnê Novos Tempos
-                            </h5>
-                            <p
-                                class="card-text"
-                                style="text-align: justify"
-                                style="min-height: 264px"
-                            >
-                                Prepare-se para uma noite inesquecível com a
-                                dupla sertaneja mais amada do Brasil! Zezé Di
-                                Camargo & Luciano trazem para Jequitinhonha os
-                                maiores sucessos de sua carreira, como "É o
-                                Amor", "Estrada da Vida" e "Pão de Mel", em um
-                                show repleto de emoção e energia. Não perca essa
-                                oportunidade de curtir ao vivo os clássicos que
-                                marcaram gerações!<br />
-                                <b>Data: 14/09 | Local: Praça Central.</b>
-                                <br />
-                                Não perca! 🎉 <br />
-                                <i>#ZezéELuciano</i>
-                                <i>#SertanejoEmJequitinhonha</i>
-                            </p>
-                            <a href="#" class="btn btn-success w-50"
-                                >Ver Mais</a
-                            >
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 card-item">
+                        <div class="card h-100">
+                            <img
+                                src="./assets/show-sertanejo.jpg"
+                                class="card-img-top"
+                                alt="Festa da Mandioca - Almenara MG"
+                                title="Festa da Mandioca - Almenara MG"
+                            />
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bolder">
+                                    Zezé di Camargo e Luciano - Turnê Novos
+                                    Tempos
+                                </h5>
+                                <p class="card-text">
+                                    Prepare-se para uma noite inesquecível com a
+                                    dupla sertaneja mais amada do Brasil! Zezé
+                                    Di Camargo & Luciano trazem para
+                                    Jequitinhonha os maiores sucessos de sua
+                                    carreira, como "É o Amor", "Estrada da Vida"
+                                    e "Pão de Mel", em um show repleto de emoção
+                                    e energia. Não perca essa oportunidade de
+                                    curtir ao vivo os clássicos que marcaram
+                                    gerações!<br />
+                                </p>
+                                <div class="mt-auto">
+                                    <span class="d-block mb-2"
+                                        ><b>Data: </b>14/09 |
+                                        <b>Local:</b> Praça Central.<br
+                                    /></span>
+                                    <a
+                                        href="./pages/DetalhesZezeLuciano.html"
+                                        class="btn btn-success w-100"
+                                    >
+                                        Detalhes</a
+                                    >
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </li>
-                <li class="list-group-item border-0 p-0" style="width: 30%">
-                    <div class="card">
-                        <img
-                            src="./assets/feira-de-flores.jpeg"
-                            class="img card-img-top"
-                            alt="Festa da Mandioca - Almenara MG"
-                            title="Festa da Mandioca - Almenara MG"
-                        />
-                        <div
-                            class="card-body d-flex align-items-center flex-column gap-3"
-                        >
-                            <h5 class="card-title fw-bolder">
-                                Feira de Flores
-                            </h5>
-                            <p
-                                class="card-text"
-                                style="text-align: justify"
-                                style="min-height: 264px"
-                            >
-                                Venha se encantar com as cores e aromas da Feira
-                                de Flores de Almenara! Um evento imperdível para
-                                os amantes da natureza, com exposição de
-                                diversas espécies de flores, plantas
-                                ornamentais, artesanato local e delícias da
-                                culinária regional. Aproveite para renovar seu
-                                jardim, aprender com os produtores e curtir um
-                                dia especial em família.<br />
-                                <b
-                                    >Data: 10/05 | Local: Praça da Igreja São
-                                    João Batista.</b
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 card-item">
+                        <div class="card h-100">
+                            <img
+                                src="./assets/feira-de-flores.jpeg"
+                                class="card-img-top"
+                                alt="Festa da Mandioca - Almenara MG"
+                                title="Festa da Mandioca - Almenara MG"
+                            />
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bolder">
+                                    Feira de Flores
+                                </h5>
+                                <p class="card-text">
+                                    Venha se encantar com as cores e aromas da
+                                    Feira de Flores de Almenara! Um evento
+                                    imperdível para os amantes da natureza, com
+                                    exposição de diversas espécies de flores,
+                                    plantas ornamentais, artesanato local e
+                                    delícias da culinária regional. Aproveite
+                                    para renovar seu jardim, aprender com os
+                                    produtores e curtir um dia especial em
+                                    família.<br />
+                                </p>
+                                <div class="mt-auto">
+                                    <span class="d-block mb-2"
+                                        ><b>Data: </b>10/05 |
+                                        <b>Local:</b> Praça da Igreja São João
+                                        Batista.<br
+                                    /></span>
+                                    <a
+                                        href="./pages/DetalhesFeiraDasFlores.html"
+                                        class="btn btn-success w-100"
+                                    >
+                                        Detalhes</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 card-item">
+                        <div class="card h-100">
+                            <img
+                                src="./assets/sarara.jpg"
+                                class="card-img-top"
+                                alt="Festa da Mandioca - Almenara MG"
+                                title="Festa da Mandioca - Almenara MG"
+                            />
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bolder">SARARÁ</h5>
+                                <p class="card-text">
+                                    Viva uma experiência única de conexão,
+                                    acolhimento e celebração das diferenças!
+                                    SARARÁ é um convite para refletir, conviver
+                                    e se emocionar através da música e da arte,
+                                    unindo pessoas de todas as cores, origens,
+                                    identidades e histórias. Aqui, valorizamos o
+                                    que nos torna únicos e o que nos aproxima,
+                                    criando um espaço de liberdade e respeito.
+                                    Venha fazer parte dessa mistura que é puro
+                                    Brasil! ✨🎶<br />
+                                </p>
+                                <div class="mt-auto">
+                                    <span class="d-block mb-2"
+                                        ><b>Data: </b>24/05 | <b>Local:</b> Rua
+                                        São Sebastião <br
+                                    /></span>
+                                    <a
+                                        href="./pages/DetalhesSarara.html"
+                                        class="btn btn-success w-100"
+                                    >
+                                        Detalhes</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 card-item">
+                        <div class="card h-100">
+                            <img
+                                src="./assets/festival-sensacional.jpg"
+                                class="card-img-top"
+                                alt="Festa da Mandioca - Almenara MG"
+                                title="Festa da Mandioca - Almenara MG"
+                            />
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bolder">
+                                    Festival Sensacional 2025
+                                </h5>
+                                <p class="card-text">
+                                    Em 28 de junho, o Sensa! comemora 15 anos
+                                    com um line-up incrível: Zeca Pagodinho,
+                                    IZA, Marina Sena, BaianaSystem, L7nnon,
+                                    Evinha, Duquesa e muito mais! Música de
+                                    qualidade, arte e aquele clima único que só
+                                    o Sensa! sabe criar. Os ingressos já estão
+                                    rolando - garanta o seu e prepare-se para
+                                    uma experiência inesquecível!<br />
+
+                                    <i>#Sensa15Anos</i> <i>#VemProSensa</i>
+                                </p>
+                                <div class="mt-auto">
+                                    <span class="d-block mb-2"
+                                        ><b>Data: </b>28/06 |
+                                        <b>Local:</b> Avenida Belmiro. <br
+                                    /></span>
+                                    <a
+                                        href="./pages/DetalhesFestival.html"
+                                        class="btn btn-success w-100"
+                                    >
+                                        Detalhes</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 card-item">
+                        <div class="card h-100">
+                            <img
+                                src="./assets/festival-gastronomico.jpg"
+                                class="card-img-top"
+                                alt="Festival Gastronômico de Almenara"
+                            />
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bolder">
+                                    Festival Gastronômico do Vale
+                                </h5>
+                                <span class="event-date mb-2"
+                                    >22-24 de Novembro</span
                                 >
-                                <br />
-                                <i>#FeiraDeFlores</i> <i>#AlmenaraMG</i>
-                            </p>
-                            <a href="#" class="btn btn-success w-50"
-                                >Ver Mais</a
-                            >
+                                <p class="card-text">
+                                    Celebração da culinária típica do Vale do
+                                    Jequitinhonha, com pratos como frango com
+                                    quiabo, tutu de feijão, doces em compota e o
+                                    tradicional "quentão". Oficinas culinárias e
+                                    competições entre cozinheiras da região.
+                                </p>
+                                <div class="mt-auto">
+                                    <span class="d-block mb-2"
+                                        ><b>Local:</b> Praça de
+                                        Alimentação</span
+                                    >
+                                    <a
+                                        href="./pages/DetalhesGastronomico.html"
+                                        class="btn btn-success w-100"
+                                    >
+                                        Detalhes</a
+                                    >
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </li>
-                <li class="list-group-item border-0 p-0" style="width: 30%">
-                    <div class="card">
-                        <img
-                            src="./assets/sarara.jpg"
-                            class="img card-img-top"
-                            alt="Festa da Mandioca - Almenara MG"
-                            title="Festa da Mandioca - Almenara MG"
-                        />
-                        <div
-                            class="card-body d-flex align-items-center flex-column gap-3"
-                        >
-                            <h5 class="card-title fw-bolder">
-                                SARARÁ
-                            </h5>
-                            <p
-                                class="card-text"
-                                style="text-align: justify"
-                                style="min-height: 264px"
-                            >
-                                Viva uma experiência única de conexão, acolhimento e celebração das diferenças! SARARÁ é um convite para refletir, conviver e se emocionar através da música e da arte, unindo pessoas de todas as cores, origens, identidades e histórias. Aqui, valorizamos o que nos torna únicos e o que nos aproxima, criando um espaço de liberdade e respeito. Venha fazer parte dessa mistura que é puro Brasil! ✨🎶<br />
-                                <b>Data: 24/05 | Local: Rua São Sebastião.</b>
-                                <br />
-                                <i>#Sarará</i> <i>#DiversidadeQueConecta</i>
-                            </p>
-                            <a href="#" class="btn btn-success w-50"
-                                >Ver Mais</a
-                            >
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 card-item">
+                        <div class="card h-100">
+                            <img
+                                src="./assets/festa-do-divino.jpg"
+                                class="card-img-top"
+                                alt="Festa do Divino em Almenara"
+                            />
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bolder">
+                                    Festa do Divino Espírito Santo
+                                </h5>
+                                <span class="event-date mb-2">30 de Maio</span>
+                                <p class="card-text">
+                                    Tradição religiosa centenária com procissão,
+                                    levantamento de mastro, distribuição de
+                                    doces e caridade. Evento que reúne a
+                                    comunidade em celebrações que misturam fé e
+                                    cultura popular.
+                                </p>
+                                <div class="mt-auto">
+                                    <span class="d-block mb-2"
+                                        ><b>Local:</b> Igreja Matriz</span
+                                    >
+                                    <a
+                                        href="./pages/DetalhesFestaDoDivino.html"
+                                        class="btn btn-success w-100"
+                                    >
+                                        Detalhes</a
+                                    >
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </li>
-                <li class="list-group-item border-0 p-0" style="width: 30%">
-                    <div class="card">
-                        <img
-                            src="./assets/festival-sensacional.jpg"
-                            class="img card-img-top"
-                            alt="Festa da Mandioca - Almenara MG"
-                            title="Festa da Mandioca - Almenara MG"
-                        />
-                        <div
-                            class="card-body d-flex align-items-center flex-column gap-3"
-                        >
-                            <h5 class="card-title fw-bolder">
-                                Festival Sensacional 2025
-                            </h5>
-                            <p
-                                class="card-text"
-                                style="text-align: justify"
-                                style="min-height: 264px"
-                            >
-                                Em 28 de junho, o Sensa! comemora 15 anos com um line-up incrível: Zeca Pagodinho, IZA, Marina Sena, BaianaSystem, L7nnon, Evinha, Duquesa e muito mais! Música de qualidade, arte e aquele clima único que só o Sensa! sabe criar. Os ingressos já estão rolando – garanta o seu e prepare-se para uma experiência inesquecível!<br />
-                                <b>Data: 28/06 | Local: Avenida Belmiro.</b>
-                                <br />
-                                <i>#Sensa15Anos</i> <i>#VemProSensa</i>
-                            </p>
-                            <a href="#" class="btn btn-success w-50"
-                                >Ver Mais</a
-                            >
-                        </div>
-                    </div>
-                </li>
-            </ul>
+                </div>
+            </div>
         </main>
         <footer class="footer bg-success">
             <div class="container p-4">
                 <div class="row d-flex justify-content-between">
                     <div class="col-md-3">
-                        <h2 class="text-light text-center">Vale do Jequitinhonha</h2>
+                        <h2 class="text-light text-center">
+                            Vale do Jequitinhonha
+                        </h2>
                     </div>
                     <div class="col-md-4 text-light">
                         <h5>Contate-nos</h5>
@@ -229,7 +343,10 @@
                 <hr />
                 <div class="row">
                     <div class="col-md-12">
-                        <p class="text-light text-center">&copy; 2025 Painel de Eventos. Todos direitos reservados.</p>
+                        <p class="text-light text-center">
+                            &copy; 2025 Painel de Eventos. Todos direitos
+                            reservados.
+                        </p>
                     </div>
                 </div>
             </div>
